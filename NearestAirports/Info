@@ -1,0 +1,3 @@
+
+ 1. When a user searches for a city, the app should show the city suggestions while typing.
+ 2. When a user clicks on one of the city name results, the app should show the top 5 nearest airport names with the runway length and country in a new screen

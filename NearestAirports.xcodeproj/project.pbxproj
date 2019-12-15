@@ -13,6 +13,12 @@
 		0C8A1B8923A4F4AF00383A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A1B8723A4F4AF00383A33 /* Main.storyboard */; };
 		0C8A1B8B23A4F4B000383A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A1B8A23A4F4B000383A33 /* Assets.xcassets */; };
 		0C8A1B8E23A4F4B000383A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A1B8C23A4F4B000383A33 /* LaunchScreen.storyboard */; };
+		0C8A1B9623A4F51300383A33 /* Info in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A1B9523A4F51300383A33 /* Info */; };
+		0C8A1B9923A4F58200383A33 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C8A1B9823A4F58200383A33 /* airports.json */; };
+		0C8A1B9F23A5014F00383A33 /* NearByAirportsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A1B9E23A5014F00383A33 /* NearByAirportsDetail.swift */; };
+		0C8A1BA123A509A200383A33 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A1BA023A509A200383A33 /* Airport.swift */; };
+		0C8A1BA423A50E9000383A33 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8A1BA323A50E9000383A33 /* DataGenerator.swift */; };
+		0CD8B36F23A6349900CD9955 /* NearByAirportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8B36E23A6349900CD9955 /* NearByAirportsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		0C8A1B8A23A4F4B000383A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8A1B8D23A4F4B000383A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8A1B8F23A4F4B000383A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8A1B9523A4F51300383A33 /* Info */ = {isa = PBXFileReference; lastKnownFileType = text; path = Info; sourceTree = "<group>"; };
+		0C8A1B9823A4F58200383A33 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		0C8A1B9E23A5014F00383A33 /* NearByAirportsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByAirportsDetail.swift; sourceTree = "<group>"; };
+		0C8A1BA023A509A200383A33 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		0C8A1BA323A50E9000383A33 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		0CD8B36E23A6349900CD9955 /* NearByAirportsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByAirportsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		0C8A1B8023A4F4AF00383A33 /* NearestAirports */ = {
 			isa = PBXGroup;
 			children = (
+				0C8A1BA223A50E6500383A33 /* DataGenerator */,
+				0C8A1B9D23A500AB00383A33 /* ViewModel */,
+				0C8A1B9C23A4F5C600383A33 /* Model */,
+				0C8A1B9B23A4F5A700383A33 /* Storyboard */,
+				0C8A1B9A23A4F59500383A33 /* View */,
+				0C8A1B9723A4F57000383A33 /* JSON */,
 				0C8A1B8123A4F4AF00383A33 /* AppDelegate.swift */,
 				0C8A1B8323A4F4AF00383A33 /* SceneDelegate.swift */,
-				0C8A1B8523A4F4AF00383A33 /* ViewController.swift */,
-				0C8A1B8723A4F4AF00383A33 /* Main.storyboard */,
 				0C8A1B8A23A4F4B000383A33 /* Assets.xcassets */,
-				0C8A1B8C23A4F4B000383A33 /* LaunchScreen.storyboard */,
 				0C8A1B8F23A4F4B000383A33 /* Info.plist */,
+				0C8A1B9523A4F51300383A33 /* Info */,
 			);
 			path = NearestAirports;
+			sourceTree = "<group>";
+		};
+		0C8A1B9723A4F57000383A33 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1B9823A4F58200383A33 /* airports.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		0C8A1B9A23A4F59500383A33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1B8523A4F4AF00383A33 /* ViewController.swift */,
+				0CD8B36E23A6349900CD9955 /* NearByAirportsController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0C8A1B9B23A4F5A700383A33 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1B8723A4F4AF00383A33 /* Main.storyboard */,
+				0C8A1B8C23A4F4B000383A33 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0C8A1B9C23A4F5C600383A33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1BA023A509A200383A33 /* Airport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C8A1B9D23A500AB00383A33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1B9E23A5014F00383A33 /* NearByAirportsDetail.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0C8A1BA223A50E6500383A33 /* DataGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				0C8A1BA323A50E9000383A33 /* DataGenerator.swift */,
+			);
+			path = DataGenerator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8A1B9623A4F51300383A33 /* Info in Resources */,
 				0C8A1B8E23A4F4B000383A33 /* LaunchScreen.storyboard in Resources */,
 				0C8A1B8B23A4F4B000383A33 /* Assets.xcassets in Resources */,
+				0C8A1B9923A4F58200383A33 /* airports.json in Resources */,
 				0C8A1B8923A4F4AF00383A33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD8B36F23A6349900CD9955 /* NearByAirportsController.swift in Sources */,
+				0C8A1BA123A509A200383A33 /* Airport.swift in Sources */,
 				0C8A1B8623A4F4AF00383A33 /* ViewController.swift in Sources */,
+				0C8A1B9F23A5014F00383A33 /* NearByAirportsDetail.swift in Sources */,
+				0C8A1BA423A50E9000383A33 /* DataGenerator.swift in Sources */,
 				0C8A1B8223A4F4AF00383A33 /* AppDelegate.swift in Sources */,
 				0C8A1B8423A4F4AF00383A33 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32E5G3376Q;
 				INFOPLIST_FILE = NearestAirports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32E5G3376Q;
 				INFOPLIST_FILE = NearestAirports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
