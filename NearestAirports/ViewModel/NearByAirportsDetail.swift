@@ -86,7 +86,7 @@ class NearByAirportsDetail {
     
     func findTopFiveNearByAirports(selectedIndexPath : IndexPath) {
         
-        let airport = self.airportList[selectedIndexPath.row]
+        let airport = self.searchedAirportList[selectedIndexPath.row]
         var distanceArray = [[String:Any]]()
           
         // find out distance from selected location.
